@@ -56,37 +56,37 @@ body{
     position: absolute;
 }
 .pizza .layer11 {
-    z-index: 4;
+    z-index: 2;
 }
 .pizza .layer10 {
-    z-index: 3;
+    z-index: 4;
 }
 .pizza .layer9 {
-    z-index: 3;
+    z-index: 4;
 }
 .pizza .layer8 {
-    z-index: 3;
+    z-index: 4;
 }
 .pizza .layer7 {
-    z-index: 3;
+    z-index: 4;
 }
 .pizza .layer6 {
-    z-index: 3;
+    z-index: 4;
 }
 .pizza .layer5 {
-    z-index: 2;
+    z-index: 3;
 }
 
 .pizza .layer4 {
-    z-index: 2;
+    z-index: 3;
 }
 
 .pizza .layer3{
-    z-index: 2;
+    z-index: 3;
 }
 
 .pizza .layer2 {
-    z-index: 2;
+    z-index: 3;
 }
 
 .pizza .layer1{
