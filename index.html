@@ -1,142 +1,244 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			Pizza ElSultan	
-				</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		
-		<h1 class="text-align-center" id="title"><span>Pizza ElSultan</span></h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florea | Soap Customizer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('pizza/background.png') no-repeat center center;
+            background-attachment: fixed;
+            background-size: cover;
+            z-index: -2;
+            filter: blur(12px);
+        }
 
-		<!-- <h2 class="text-align-center">customize your Pizza </h1> -->
-		
-		<div class="pizza">
-			<div class="col overlay layer11 hide"><img src="pizza/cheese.png" class="full-width"></div>
-			<div class="col overlay layer10 hide"><img src="pizza/shrimp.png" class="full-width"></div>
-			<div class="col overlay layer9 hide"><img src="pizza/chicken.png" class="full-width"></div>
-			<div class="col overlay layer8 hide"><img src="pizza/pepperoni.png" class="full-width"></div>
-			<div class="col overlay layer7 hide"><img src="pizza/steak.png" class="full-width"></div>
-			<div class="col overlay layer6 hide"><img src="pizza/beef.png" class="full-width"></div>
-			<div class="col overlay layer5 hide"><img src="pizza/green-peppers.png" class="full-width"></div>
-			<div class="col overlay layer4 hide"><img src="pizza/black-olives.png" class="full-width"></div>
-			<div class="col overlay layer3 hide"><img src="pizza/onions.png" class="full-width"></div>
-			<div class="col overlay layer2 hide"><img src="pizza/tomatoes.png" class="full-width"></div>
-			<div class="col overlay layer1 hide"><img src="pizza/sauce.png" class="full-width"></div>
-			
-			<div class="col"><img src="pizza/dough.png" class="full-width"></div>
-		</div>
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff8e7;
+            position: relative;
+        }
 
-		<h2 class="text-align-center">Sauces</h2>
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #f6c700;
+            margin-top: 30px;
+        }
 
-		<div class="row flex-row flex-wrap flex-justify-content-center">
-			<div class="col">
-				<label class="checkbox-container" for="layer1">
-					<input type="checkbox" class="checkbox" value="layer1" id="layer1"> 
-					<img src="pizza/sauce.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Red-Sauce</div>
-				</label>
-			</div>
-		</div>
-<!-- vege -->
+        .soap-center {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 10px 0;
+            animation: float 3s ease-in-out infinite;
+        }
 
-		<h2 class="text-align-center">Vegetables</h2>
-		<div class="row flex-row flex-wrap flex-justify-content-center">
-			<div class="col">
-					<label class="checkbox-container" for="layer2">
-					<input type="checkbox" class="checkbox" value="layer2" id="layer2"> 
-					<img src="pizza/tomatoes.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Tomatoes</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer3">
-					<input type="checkbox" class="checkbox" value="layer3" id="layer3"> 
-					<img src="pizza/onions.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Onions</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer4">
-					<input type="checkbox" class="checkbox" value="layer4" id="layer4"> 
-					<img src="pizza/black-olives.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Black-Olives</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer5">
-					<input type="checkbox" class="checkbox" value="layer5" id="layer5"> 
-					<img src="pizza/green-peppers.png"> 
-					<span class="checkmark"></span>
-					<div class="label">G-Peppers</div>
-				</label>
-			</div>
-		</div>
-		<!-- protien -->
-		<h2 class="text-align-center">Proteins</h2>
-		<div class="row flex-row flex-wrap flex-justify-content-center">
-			<div class="col">
-				<label class="checkbox-container" for="layer6">
-					<input type="checkbox" class="checkbox" value="layer6" id="layer6"> 
-					<img src="pizza/beef.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Sausage</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer7">
-					<input type="checkbox" class="checkbox" value="layer7" id="layer7"> 
-					<img src="pizza/steak.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Pastrami</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer8">
-					<input type="checkbox" class="checkbox" value="layer8" id="layer8"> 
-					<img src="pizza/pepperoni.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Pepperoni</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer9">
-					<input type="checkbox" class="checkbox" value="layer9" id="layer9"> 
-					<img src="pizza/chicken.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Chicken</div>
-				</label>
-			</div>
-			<div class="col">
-				<label class="checkbox-container" for="layer10">
-					<input type="checkbox" class="checkbox" value="layer10" id="layer10"> 
-					<img src="pizza/shrimp.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Shrimp</div>
-				</label>
-			</div>
-		</div>
-		<h2 class="text-align-center">Cheese</h2>
-		<div class="row flex-row flex-wrap flex-justify-content-center">
-			<div class="col">
-				<label class="checkbox-container" for="layer11">
-					<input type="checkbox" class="checkbox" value="layer11" id="layer11"> 
-					<img src="pizza/cheese.png"> 
-					<span class="checkmark"></span>
-					<div class="label">Mozzarella</div>
-				</label>
-			</div>
-		
+        .soap-center img {
+            max-width: 240px;
+            height: auto;
+        }
 
-		
-		<script src="script.js"></script>
-	</body>
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .col {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .col:hover {
+            transform: scale(1.1);
+        }
+
+        .option-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            overflow: hidden;
+        }
+
+        .option-circle img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #f6c700;
+        }
+
+        input[type="radio"] {
+            margin-top: 10px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+ <h1 class="text-align-center" id="title"><span> Florea</span></h1>
+    <div class="soap-center">
+        <img id="soap-image" src="pizza/square soap.png" alt="Soap Base">
+    </div>
+
+    <h2>Skin Type</h2>
+    <div class="row">
+        <div class="col">
+            <label>Oily</label>
+            <input type="radio" name="skin" value="oily">
+        </div>
+        <div class="col">
+            <label>Dry</label>
+            <input type="radio" name="skin" value="dry">
+        </div>
+        <div class="col">
+            <label>Combined</label>
+            <input type="radio" name="skin" value="combined">
+        </div>
+    </div>
+
+    <h2>Fragrance Scent</h2>
+    <div class="row">
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/Fresh lemon.png" alt="lemon">
+            </div>
+            <label>Fresh Lemon</label>
+            <input type="radio" name="scent" value="lemon">
+        </div>
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/pomegrance.png" alt="pomegranate">
+            </div>
+            <label>Pomegranate</label>
+            <input type="radio" name="scent" value="pomegranate">
+        </div>
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/Orange.png" alt="orange">
+            </div>
+            <label>Fresh Orange</label>
+            <input type="radio" name="scent" value="orange">
+        </div>
+    </div>
+
+    <h2>Natural Oils Blend</h2>
+    <div class="row">
+        <div class="col"><label>Lavender Oil</label><input type="radio" name="oil" value="lavender"></div>
+        <div class="col"><label>Almond Oil</label><input type="radio" name="oil" value="almond"></div>
+        <div class="col"><label>Coconut Oil</label><input type="radio" name="oil" value="coconut"></div>
+        <div class="col"><label>Tea Tree</label><input type="radio" name="oil" value="tea-tree"></div>
+    </div>
+
+    <h2>Choose a Shape</h2>
+    <div class="row">
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/square soap.png" alt="Cube">
+            </div>
+            <label>Cube</label>
+            <input type="radio" name="shape" value="cube">
+        </div>
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/oval soap.png" alt="Classic Oval">
+            </div>
+            <label>Classic Oval</label>
+            <input type="radio" name="shape" value="oval">
+        </div>
+        <div class="col">
+            <div class="option-circle">
+                <img src="pizza/heart soap.png" alt="Heart">
+            </div>
+            <label>Heart</label>
+            <input type="radio" name="shape" value="heart">
+        </div>
+    </div>
+
+    <h2>Florea Flow</h2>
+    <div class="row">
+        <div class="col"><label>Relax</label><input type="radio" name="flow" value="relax"></div>
+        <div class="col"><label>Happy</label><input type="radio" name="flow" value="happy"></div>
+        <div class="col"><label>Energize</label><input type="radio" name="flow" value="energize"></div>
+        <div class="col"><label>Comfort</label><input type="radio" name="flow" value="comfort"></div>
+    </div>
+
+    <script>
+        const scentRadios = document.querySelectorAll('input[name="scent"]');
+        const shapeRadios = document.querySelectorAll('input[name="shape"]');
+        const soapImage = document.getElementById('soap-image');
+
+        let selectedScent = '';
+        let selectedShape = '';
+
+        const updateImage = () => {
+            if (selectedScent && selectedShape) {
+                const fileName = `${selectedScent} ${selectedShape}.png`;
+                soapImage.src = `pizza/${fileName}`;
+            }
+        };
+
+        scentRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                selectedScent = radio.value;
+                updateImage();
+            });
+        });
+
+        shapeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                selectedShape = radio.value;
+                updateImage();
+            });
+        });
+    </script>
+</body>
 </html>
