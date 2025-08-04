@@ -14,13 +14,20 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background: url('pizza/background.png') no-repeat center center;
-            background-attachment: fixed;
             background-size: cover;
+            background-position: center center;
+            background-attachment: scroll;
             z-index: -2;
-            filter: blur(12px);
+            filter: blur(3px);
+        }
+
+        @media (max-width: 768px) {
+            body::before {
+                background-image: url('pizza/background_mobile.png');
+            }
         }
 
         body::after {
@@ -28,8 +35,8 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background-color: rgba(0, 0, 0, 0.55);
             z-index: -1;
         }
@@ -124,47 +131,33 @@
     </style>
 </head>
 <body>
- <h1 class="text-align-center" id="title"><span> Florea</span></h1>
+    <h1 class="text-align-center" id="title"><span> Florea</span></h1>
+
     <div class="soap-center">
         <img id="soap-image" src="pizza/square soap.png" alt="Soap Base">
     </div>
 
     <h2>Skin Type</h2>
     <div class="row">
-        <div class="col">
-            <label>Oily</label>
-            <input type="radio" name="skin" value="oily">
-        </div>
-        <div class="col">
-            <label>Dry</label>
-            <input type="radio" name="skin" value="dry">
-        </div>
-        <div class="col">
-            <label>Combined</label>
-            <input type="radio" name="skin" value="combined">
-        </div>
+        <div class="col"><label>Oily</label><input type="radio" name="skin" value="oily"></div>
+        <div class="col"><label>Dry</label><input type="radio" name="skin" value="dry"></div>
+        <div class="col"><label>Combined</label><input type="radio" name="skin" value="combined"></div>
     </div>
 
     <h2>Fragrance Scent</h2>
     <div class="row">
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/Fresh lemon.png" alt="lemon">
-            </div>
+            <div class="option-circle"><img src="pizza/Fresh lemon.png" alt="lemon"></div>
             <label>Fresh Lemon</label>
             <input type="radio" name="scent" value="lemon">
         </div>
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/pomegrance.png" alt="pomegranate">
-            </div>
+            <div class="option-circle"><img src="pizza/pomegrance.png" alt="pomegranate"></div>
             <label>Pomegranate</label>
             <input type="radio" name="scent" value="pomegranate">
         </div>
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/Orange.png" alt="orange">
-            </div>
+            <div class="option-circle"><img src="pizza/Orange.png" alt="orange"></div>
             <label>Fresh Orange</label>
             <input type="radio" name="scent" value="orange">
         </div>
@@ -181,23 +174,17 @@
     <h2>Choose a Shape</h2>
     <div class="row">
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/square soap.png" alt="Cube">
-            </div>
+            <div class="option-circle"><img src="pizza/square soap.png" alt="Cube"></div>
             <label>Cube</label>
             <input type="radio" name="shape" value="cube">
         </div>
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/oval soap.png" alt="Classic Oval">
-            </div>
+            <div class="option-circle"><img src="pizza/oval soap.png" alt="Classic Oval"></div>
             <label>Classic Oval</label>
             <input type="radio" name="shape" value="oval">
         </div>
         <div class="col">
-            <div class="option-circle">
-                <img src="pizza/heart soap.png" alt="Heart">
-            </div>
+            <div class="option-circle"><img src="pizza/heart soap.png" alt="Heart"></div>
             <label>Heart</label>
             <input type="radio" name="shape" value="heart">
         </div>
